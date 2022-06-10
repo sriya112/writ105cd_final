@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title> Donate to help poverty! </title>  
+<link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    body {
+        background-image: url("https://www.brookings.edu/wp-content/uploads/2019/06/global_poverty_001.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    h2 {
+        font-family: 'Montserrat';
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        width: 7%;
+    }
+
+    .inp {
+        display: flex;
+        justify-content: center;
+        width: 31%;
+        padding-bottom: 2%;
+    }
+
+    .stuff {
+        display: flex;
+        justify-content: center;
+    }
+
+    h3 {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        background-color: gray;
+    }
+</style>
+ 
+<body>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="./game.html">Play the Game!</a></li>
+    </ul>
+
+    <br/><br/>
+    <div class="stuff">
+        <input class="inp" id="text1" placeholder="Choose a number between 1 and 10 to learn about poverty!">
+    </div>
+    <div class="stuff">
+        <button class="btn" onclick="enter()"><h2>Enter</h2></button>
+    </div>
+    <h3 id="output"></h3>
+</body>
+
+<script>
+ 
+var fortunes = ["About 9.2% of the world, or 689 million people, live in extreme poverty on less than $1.90 a day, according to the World Bank.", 
+"About 70% of people older than 15 who live in extreme poverty have no schooling or only some basic education.", 
+"Extreme poverty rates nearly doubled in the Middle East and North Africa between 2015 and 2018, from 3.8% to 7.2%, mostly because of crises in Syria and Yemen.", 
+"Children living in poverty often lack access to quality education. Sometimes it’s because there aren’t enough quality schools, their parents cannot afford school fees, or because impoverished families need their children to work. Without a quality education, children grow up being unable to provide for their own children — thus the generational cycle of poverty.", 
+"A poverty line, also called a poverty threshold, is the line below which it is difficult, if not impossible, to afford basic needs. The poverty line is determined in each country by adding up the cost of meeting minimum needs, such as food and shelter. Household incomes that are too low to afford minimum needs, such as food and shelter, are below the poverty line.", 
+"The root causes of poverty aren’t only a lack of access to basic necessities of life like water, food, shelter, education, or healthcare. Inequities including gender or ethnic discrimination, poor governance, conflict, exploitation, and domestic violence also cause poverty. These inequities not only lead a person or a society into poverty but can also restrict access to social services that could help people overcome poverty.", 
+"Poverty can be a trap. For someone to get out of poverty, they need opportunities such as education, clean water, medical facilities nearby, and financial resources. Without these basic elements, poverty becomes a cycle from one generation to the next.", 
+"Natural disasters and conflict can add to the cycle of poverty or add people to it. When a natural disaster strikes an impoverished community without functional public institutions, families are more vulnerable and often lack basic resources to recover, thus further entrenching a community in poverty or jeopardizing one that had recently emerged.", 
+"Since 1990, more than 1.2 billion people have been lifted out of extreme poverty and child mortality has dropped by more than half. Reducing extreme poverty rates was a central goal in the Millennium Development Goals — eight goals signed by all United Nations member states in 2000 with a goal to achieve them by 2015. Since then, the world has made much progress in reducing global poverty.", 
+"The USDA estimated that 11.1% of US households were food insecure in 2018.  This means that approximately 14.3 million households had difficulty providing enough food for all their members due to a lack of resources. Rates of food insecurity were substantially higher than the national average for households with incomes near or below the Federal poverty line."];
+
+var str = "";
+var i = 0;
+function enter() {
+	str = document.getElementById("text1").value;
+	document.getElementById("output").innerHTML = fortunes[parseInt(str)-1];
+}
+
+</script>
+</html>
