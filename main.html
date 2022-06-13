@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html>
 <head>
-<title> Donate to help poverty! </title>  
+<title> Donate to eradicate world hunger! </title>  
 <link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -57,7 +57,7 @@
 
     <br/><br/>
     <div class="stuff">
-        <input class="inp" id="text1" placeholder="Choose a number between 1 and 10 to learn about poverty!">
+        <input class="inp" id="text1" placeholder="Choose a number between 1 and 10 to learn about world hunger!">
     </div>
     <div class="stuff">
         <button class="btn" onclick="enter()"><h2>Enter</h2></button>
@@ -67,22 +67,31 @@
 
 <script>
  
-var fortunes = ["About 9.2% of the world, or 689 million people, live in extreme poverty on less than $1.90 a day, according to the World Bank.", 
-"About 70% of people older than 15 who live in extreme poverty have no schooling or only some basic education.", 
-"Extreme poverty rates nearly doubled in the Middle East and North Africa between 2015 and 2018, from 3.8% to 7.2%, mostly because of crises in Syria and Yemen.", 
-"Children living in poverty often lack access to quality education. Sometimes it’s because there aren’t enough quality schools, their parents cannot afford school fees, or because impoverished families need their children to work. Without a quality education, children grow up being unable to provide for their own children — thus the generational cycle of poverty.", 
-"A poverty line, also called a poverty threshold, is the line below which it is difficult, if not impossible, to afford basic needs. The poverty line is determined in each country by adding up the cost of meeting minimum needs, such as food and shelter. Household incomes that are too low to afford minimum needs, such as food and shelter, are below the poverty line.", 
-"The root causes of poverty aren’t only a lack of access to basic necessities of life like water, food, shelter, education, or healthcare. Inequities including gender or ethnic discrimination, poor governance, conflict, exploitation, and domestic violence also cause poverty. These inequities not only lead a person or a society into poverty but can also restrict access to social services that could help people overcome poverty.", 
-"Poverty can be a trap. For someone to get out of poverty, they need opportunities such as education, clean water, medical facilities nearby, and financial resources. Without these basic elements, poverty becomes a cycle from one generation to the next.", 
-"Natural disasters and conflict can add to the cycle of poverty or add people to it. When a natural disaster strikes an impoverished community without functional public institutions, families are more vulnerable and often lack basic resources to recover, thus further entrenching a community in poverty or jeopardizing one that had recently emerged.", 
-"Since 1990, more than 1.2 billion people have been lifted out of extreme poverty and child mortality has dropped by more than half. Reducing extreme poverty rates was a central goal in the Millennium Development Goals — eight goals signed by all United Nations member states in 2000 with a goal to achieve them by 2015. Since then, the world has made much progress in reducing global poverty.", 
-"The USDA estimated that 11.1% of US households were food insecure in 2018.  This means that approximately 14.3 million households had difficulty providing enough food for all their members due to a lack of resources. Rates of food insecurity were substantially higher than the national average for households with incomes near or below the Federal poverty line."];
+var facts = [
+// world vision
+"Globally, about 8.9% of the world’s population — 690 million people — go to bed on an empty stomach each night. Since 2014, the number of people affected by hunger has been slowly on the rise. If it continues at this rate, it’ll exceed 840 million by 2030.",
+"The hunger Sustainable Development Goal calls for ending hunger in the world by 2030. Unfortunately — with world hunger on the rise — this goal will likely not be met, even without considering the effects of COVID-19. Estimates suggest that an additional 83 million to 132 million more people will be chronically hungry due to the pandemic.",
+"Extreme poverty rates fell from nearly 36% in 1990 to 9.2% in 2017. However, having the economic means to access nutritious food is also affected by food prices and people’s purchasing power, which have both varied widely in recent years. With a healthy diet costing more than the international poverty line of $1.90 a day, it remains unaffordable for people living in extreme poverty.",
+
+//usda gov
+"The USDA estimated that 11.1% of US households were food insecure in 2018.  This means that approximately 14.3 million households had difficulty providing enough food for all their members due to a lack of resources. Rates of food insecurity were substantially higher than the national average for households with incomes near or below the Federal poverty line.",
+"2019’s report, using data from December 2018, shows that 88.9 percent of American households were food secure throughout the entire year, meaning that all household members had access at all times to enough food for an active, healthy life.",
+
+//actionagainsthunger
+"There is more than enough food produced in the world to feed everyone on the planet.",
+"Small farmers, herders, and fishermen produce about 70 percent of the global food supply, yet they are especially vulnerable to food insecurity – poverty and hunger are most acute among rural populations.",
+"An estimated 14 million children under the age of five worldwide suffer from severe acute malnutrition, also known as severe wasting, yet only 25 percent of acutely malnourished children have access to lifesaving treatment.",
+
+//opportunity.org
+"Hunger is the cause of 45% of all children's deaths",
+"As the largest and most populated continent, Asia is home to approximately 4.427 billion people. Unfortunately, more than 550 million people part of that population suffers from hunger."
+];
 
 var str = "";
 var i = 0;
 function enter() {
 	str = document.getElementById("text1").value;
-	document.getElementById("output").innerHTML = fortunes[parseInt(str)-1];
+	document.getElementById("output").innerHTML = facts[parseInt(str)-1];
 }
 
 </script>
